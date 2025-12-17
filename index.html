@@ -1,80 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- BASIC META -->
-  <meta charset="UTF-8">
-  <title>Granny Unblocked GitHub – Play Free Online Horror Game</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Granny Unblocked GitHub – Play Free Online</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO META -->
-  <meta name="description" content="Play Granny Unblocked GitHub version online for free. Escape the scary house, solve puzzles, hide from Granny, and survive. No download required.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://Play-Granny-unblocked.github.io/granny-unblocked/">
+<!-- SEO -->
+<meta name="description" content="Play Granny Unblocked GitHub version online. Escape the scary house, solve puzzles, and survive. Click Play Now to start. No download required.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://play-granny-unblocked.github.io/granny-unblocked/">
 
-  <!-- OPEN GRAPH (SOCIAL SEO) -->
-  <meta property="og:title" content="Granny Unblocked GitHub – Play Free Online">
-  <meta property="og:description" content="Granny Unblocked horror escape game. Play online without downloads, school-friendly and fast loading.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://Play-Granny-unblocked.github.io/granny-unblocked/">
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="Granny Unblocked GitHub">
+<meta property="og:description" content="Granny Unblocked horror escape game. Click Play Now and survive the night.">
+<meta property="og:type" content="website">
 
-  <!-- STYLE -->
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      overflow: hidden;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<!-- STYLE -->
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+}
 
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
+header {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  border-bottom: 1px solid #222;
+}
 
-    h1 {
-      position: absolute;
-      left: -9999px;
-    }
-  </style>
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
 
-  <!-- SCHEMA: VIDEOGAME -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "VideoGame",
-    "name": "Granny Unblocked",
-    "description": "Granny Unblocked GitHub version is a horror escape game where players must solve puzzles, avoid Granny, and escape the house without being caught.",
-    "genre": ["Horror", "Survival", "Puzzle"],
-    "applicationCategory": "Game",
-    "operatingSystem": "Web Browser",
-    "playMode": "SinglePlayer",
-    "url": "https://Play-Granny-unblocked.github.io/granny-unblocked/",
-    "author": {
-      "@type": "Organization",
-      "name": "DVloper"
-    }
-  }
-  </script>
+header p {
+  color: #ccc;
+  max-width: 700px;
+  margin: 10px auto 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.game-box {
+  position: relative;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.game-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #000;
+}
+
+.play-btn {
+  background: #e50914;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 15px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background: #ff1e27;
+}
+
+.controls {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.controls button {
+  background: rgba(0,0,0,0.7);
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: none;
+}
+</style>
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Granny Unblocked",
+  "description": "Granny Unblocked GitHub version is a horror escape game where players must solve puzzles and avoid Granny to escape the house.",
+  "genre": ["Horror","Puzzle","Survival"],
+  "playMode": "SinglePlayer",
+  "applicationCategory": "Game",
+  "operatingSystem": "Web Browser"
+}
+</script>
 
 </head>
 <body>
 
-  <!-- H1 FOR SEO (HIDDEN VISUALLY) -->
+<header>
   <h1>Granny Unblocked GitHub</h1>
+  <p>Try to escape the terrifying house, solve puzzles, and avoid Granny. Click Play Now to start playing instantly.</p>
+</header>
 
-  <!-- FULLSCREEN GAME -->
-  <iframe
-    src="https://gnhustgames.org/granny-source/"
-    allow="fullscreen"
-    allowfullscreen
-    loading="lazy"
-    referrerpolicy="no-referrer">
-  </iframe>
+<div class="container">
+
+  <div class="game-box" id="gameBox">
+
+    <!-- CONTROLS -->
+    <div class="controls" id="controls">
+      <button onclick="toggleFullscreen()">⛶ Fullscreen</button>
+    </div>
+
+    <!-- PLACEHOLDER -->
+    <div class="game-placeholder" id="placeholder">
+      <button class="play-btn" onclick="loadGame()">▶ Play Now</button>
+    </div>
+
+    <!-- GAME IFRAME -->
+    <iframe
+      id="gameFrame"
+      src=""
+      allowfullscreen
+      allow="fullscreen">
+    </iframe>
+
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+function loadGame() {
+  const iframe = document.getElementById('gameFrame');
+  iframe.src = "https://gnhustgames.org/granny-source/";
+  iframe.style.display = "block";
+
+  document.getElementById('placeholder').style.display = "none";
+  document.getElementById('controls').style.display = "block";
+}
+
+function toggleFullscreen() {
+  const box = document.getElementById('gameBox');
+  if (!document.fullscreenElement) {
+    box.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
+</script>
 
 </body>
 </html>
